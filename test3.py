@@ -48,10 +48,10 @@ if selected == "Electric vs Conventional Car":
     col2.subheader("Select Electric Car")
 
     #reading normal car and electric car dataset
-    nor_com=pd.read_csv(r"C:\Users\Anusha\Desktop\project\cars_engage_2022.csv")
-    #nor_com=pd.read_csv("cars_engage_2022.csv")
-    ev_com=pd.read_csv(r"C:\Users\Anusha\Desktop\project\ElectricCar.csv")
-    #ev_com=pd.read_csv("ElectricCar.csv")
+    #nor_com=pd.read_csv(r"C:\Users\Anusha\Desktop\project\cars_engage_2022.csv")
+    nor_com=pd.read_csv("cars_engage_2022.csv")
+    #ev_com=pd.read_csv(r"C:\Users\Anusha\Desktop\project\ElectricCar.csv")
+    ev_com=pd.read_csv("ElectricCar.csv")
 
     with col1:
             
@@ -246,8 +246,8 @@ if selected == "Electric vs Conventional Car":
 
 
 if selected == "Suggest Cars":
-    df = pd.read_csv(r"C:\Users\Anusha\Desktop\project\cars_engage_2022.csv")
-    #df = pd.read_csv("cars_engage_2022.csv")
+    #df = pd.read_csv(r"C:\Users\Anusha\Desktop\project\cars_engage_2022.csv")
+    df = pd.read_csv("cars_engage_2022.csv")
     
 
     #cleaning data
@@ -308,7 +308,9 @@ if selected == "Predict Price of Used Car":
     
     model = pickle.load(open('Usedcar_model2.pkl','rb'))
 
-    carprice_data = pd.read_csv(r"C:\Users\Anusha\Desktop\project\carprice_data.csv")
+    #carprice_data = pd.read_csv(r"C:\Users\Anusha\Desktop\project\carprice_data.csv")
+    carprice_data = pd.read_csv("carprice_data.csv")
+
 
     Make = carprice_data['company'].unique().tolist()
     make_choice=st.selectbox('Select Make:', Make)
