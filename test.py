@@ -1,6 +1,6 @@
 from asyncore import write
 from gettext import npgettext
-from msilib.schema import CheckBox
+
 
 import pandas as pd
 import streamlit as st
