@@ -308,7 +308,8 @@ if selected == "Predict Price of Used Car":
     
     model = pickle.load(open('Usedcar_model2.pkl','rb'))
 
-    carprice_data = pd.read_csv(r"C:\Users\Anusha\Desktop\project\carprice_data.csv")
+    #carprice_data = pd.read_csv(r"C:\Users\Anusha\Desktop\project\carprice_data.csv")
+    carprice_data = pd.read_csv("carprice_data.csv")       
 
     Make = carprice_data['company'].unique().tolist()
     make_choice=st.selectbox('Select Make:', Make)
