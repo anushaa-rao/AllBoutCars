@@ -18,7 +18,7 @@ import altair as alt
 #import plotly.graph_objects as go
 import numpy as np
 st.set_page_config(layout="wide")
-st.title("All 'B")
+st.markdown("<h1 style='text-align: center; color: red;'>All Bout Cars</h1>", unsafe_allow_html=True)
 selected = option_menu(
             menu_title=None,  
             options=["Electric vs Conventional Car","Suggest Cars", "Predict Price of Used Car"], 
