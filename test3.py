@@ -314,6 +314,7 @@ if selected == "Predict Price of Used Car":
 
     Make = carprice_data['company'].unique().tolist()
     make_choice=st.selectbox('Select Make:', Make)
+            
 
     Model = carprice_data['name'].unique().tolist()
     model_choice=st.selectbox('Select Model:', Model)
@@ -329,7 +330,7 @@ if selected == "Predict Price of Used Car":
 
     Model = model
     prediction=Model.predict(pd.DataFrame(columns=['name', 'company', 'year', 'kms_driven', 'fuel_type'],
-                                data=np.array([model_choice,make_choice,year_choice,dist_choice,fuel_choice]).reshape(1, 5)))
+                                data=np.array([str(model_choice),str(make_choice),str(year_choice),str(dist_choice),str(fuel_choice)]).reshape(1, 5)))
 
         
 
