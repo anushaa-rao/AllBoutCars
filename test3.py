@@ -329,17 +329,17 @@ if selected == "Predict Price of Used Car":
 
 
     Model = model
-    prediction=Model.predict(pd.DataFrame(columns=['name', 'company', 'year', 'kms_driven', 'fuel_type'],data=np.array([str(model_choice),str(make_choice),int(year_choice),int(dist_choice),str(fuel_choice)]).reshape(1, 5)))
+    #prediction=Model.predict(pd.DataFrame(columns=['name', 'company', 'year', 'kms_driven', 'fuel_type'],data=np.array([str(model_choice),str(make_choice),int(year_choice),int(dist_choice),str(fuel_choice)]).reshape(1, 5)))
 
         
 
-    output = round(prediction[0],2)
+    #output = round(prediction[0],2)
 
 
-    button=st.button('Predict')
-    if button:
-        display=str( 0.95*output)+" and "+str(1.05*output)
-        st.success('Predicted price range is between '+display)
+    #button=st.button('Predict')
+    #if button:
+        #display=str( 0.95*output)+" and "+str(1.05*output)
+        #st.success('Predicted price range is between '+display)
 
 
 
