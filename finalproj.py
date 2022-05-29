@@ -327,7 +327,7 @@ if selected == "Predict Price of Used Car":
 
 
     Model = model
-    prediction=Model.predict(pd.DataFrame(columns=['name', 'company', 'year', 'kms_driven', 'fuel_type'],data=np.array([model_choice,make_choice,year_choice,dist_choice,fuel_choice]).reshape(1, 5)))
+    prediction=Model.predict(pd.DataFrame(columns=['name', 'company', 'year', 'kms_driven', 'fuel_type'],data=np.array([str(model_choice),str(make_choice),int(year_choice),int(dist_choice),str(fuel_choice)]).reshape(1, 5)))
 
         
 
