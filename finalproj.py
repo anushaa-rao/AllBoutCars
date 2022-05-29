@@ -18,7 +18,7 @@ import altair as alt
 #import plotly.graph_objects as go
 import numpy as np
 st.set_page_config(layout="wide")
-st.title("Automotive Industry Data Analysis")
+st.title("ABC-All 'Bout Cars")
 selected = option_menu(
             menu_title=None,  
             options=["Electric vs Conventional Car","Suggest Cars", "Predict Price of Used Car"], 
@@ -48,10 +48,10 @@ if selected == "Electric vs Conventional Car":
     col2.subheader("Select Electric Car")
 
     #reading normal car and electric car dataset
-    nor_com=pd.read_csv(r"C:\Users\Anusha\Desktop\project\cars_engage_2022.csv")
-    #nor_com=pd.read_csv("cars_engage_2022.csv")
-    ev_com=pd.read_csv(r"C:\Users\Anusha\Desktop\project\ElectricCar.csv")
-    #ev_com=pd.read_csv("ElectricCar.csv")
+    #nor_com=pd.read_csv(r"C:\Users\Anusha\Desktop\project\cars_engage_2022.csv")
+    nor_com=pd.read_csv("cars_engage_2022.csv")
+    #ev_com=pd.read_csv(r"C:\Users\Anusha\Desktop\project\ElectricCar.csv")
+    ev_com=pd.read_csv("ElectricCar.csv")
 
     with col1:
             
@@ -246,8 +246,8 @@ if selected == "Electric vs Conventional Car":
 
 
 if selected == "Suggest Cars":
-    df = pd.read_csv(r"C:\Users\Anusha\Desktop\project\cars_engage_2022.csv")
-    #df = pd.read_csv("cars_engage_2022.csv")
+    #df = pd.read_csv(r"C:\Users\Anusha\Desktop\project\cars_engage_2022.csv")
+    df = pd.read_csv("cars_engage_2022.csv")
     
 
     #cleaning data
