@@ -1,6 +1,6 @@
-##NOTE
+*NOTE*
 To run the web app locally, please type the following commoand after installing the libraries from requirements.txt
-streamlit run allaboutcars.py 
+#streamlit run allaboutcars.py 
 
 # AllBoutCars
 
