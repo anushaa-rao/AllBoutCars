@@ -1,3 +1,7 @@
+##NOTE
+To run the web app locally, please type the following commoand after installing the libraries from requirements.txt
+streamlit run allaboutcars.py 
+
 # AllBoutCars
 
 AllBoutCars is a web-application made for Microsoft Engage 2022. The theme for the project was to create a web-app using Data Analysis in the Automotive Sector.
